@@ -220,8 +220,11 @@ function getConfig(options = {}) {
                 crypto: false,
                 fs: false,
                 path: false,
-                process: false
+                process: false,
+
+                events: require.resolve('events/')
             }
+
         }
     };
 }
@@ -255,7 +258,7 @@ function getDevServerConfig() {
                 }
             }
         ],
-        server: process.env.CODESPACES ? 'http' : 'https',
+        server: 'http',
         static: {
             directory: process.cwd(),
             watch: {
