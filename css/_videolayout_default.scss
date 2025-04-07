@@ -42,6 +42,9 @@
 }
 
 .videocontainer {
+    background-image: url('/images/video-thumb.png');
+    background-color: #040404;
+    background-size: cover;
     position: relative;
     text-align: center;
     overflow: 'hidden';
